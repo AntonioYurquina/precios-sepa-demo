@@ -1,0 +1,50 @@
+name: Dejar una opinión
+description: Contanos qué te pareció PreciosYa (versión de prueba)
+title: "Opinión: "
+labels: ["opinión"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por probarla! Es un prototipo y tu mirada nos ayuda mucho. **Este comentario es público**: no escribas datos personales.
+  - type: dropdown
+    id: quien
+    attributes:
+      label: ¿Quién sos?
+      options:
+        - Compro para mi hogar
+        - Tengo un comercio o un almacén
+        - Trabajo en el rubro de supermercados
+        - Otro
+    validations:
+      required: false
+  - type: textarea
+    id: para-que
+    attributes:
+      label: En una frase, ¿para qué sirve esta app?
+    validations:
+      required: true
+  - type: textarea
+    id: util
+    attributes:
+      label: ¿Qué fue lo más útil o lo que más te gustó?
+  - type: textarea
+    id: confuso
+    attributes:
+      label: ¿Qué te confundió, te molestó o te faltó?
+  - type: dropdown
+    id: pagaria
+    attributes:
+      label: Si te ahorrara plata todos los meses, ¿pagarías una suscripción?
+      options:
+        - "Sí"
+        - "Tal vez"
+        - "No"
+  - type: input
+    id: cuanto
+    attributes:
+      label: Si pagarías, ¿cuánto (en pesos por mes)?
+  - type: textarea
+    id: otros
+    attributes:
+      label: Otros comentarios
